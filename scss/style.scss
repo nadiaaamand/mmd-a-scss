@@ -1,0 +1,16 @@
+/*Variabler*/
+$bg-color: #F0F0F0; 
+$nav-color: #ffffff;
+$footer-color: #0A1F1C;
+$primary-color: #3A8479;
+$secondary-color: #133833;
+$text-color: #484848;
+$padding: 0.5em;
+$font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+/*Mixins*/
+@mixin flex($justify:center, $align:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
