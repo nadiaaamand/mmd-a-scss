@@ -14,3 +14,41 @@ $font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: $justify;
     align-items: $align;
 }
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    background-color: $bg-color;
+
+    /*Nesting - indsætter alle elementer som har direkte relation til øverste element af blokken*/
+        p{
+            font-size: 16px;
+            color: $text-color;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-weight: 600;
+            color: $text-color;
+        }
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /*istedet for at skrive 1fr*3 */
+    grid-auto-rows: minmax(50px, auto); /*Ved at bruge minmax sikre vi en minimumstørrelse af vores gridelementer og ved auto sikre vi at boksen tilpasser sig efter dens indhold*/
+}
+
+header{
+    grid-column: 1/6; /*grid column start og slut på en linje i stedet for to*/
+    @include flex($justify: space-between);
+    background-color: $nav-color;
+    border-bottom: 4px solid $primary-color;
+
+}

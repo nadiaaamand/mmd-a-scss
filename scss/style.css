@@ -1,5 +1,39 @@
-a {
-  padding: 1em;
-  margin: 1em 2em;
-  color: blue;
+@charset "UTF-8";
+/*Variabler*/
+/*Mixins*/
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F0F0F0;
+  /*Nesting - indsætter alle elementer som har direkte relation til øverste element af blokken*/
+}
+body p {
+  font-size: 16px;
+  color: #484848;
+  line-height: 1.5;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: 600;
+  color: #484848;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /*istedet for at skrive 1fr*3 */
+  grid-auto-rows: minmax(50px, auto); /*Ved at bruge minmax sikre vi en minimumstørrelse af vores gridelementer og ved auto sikre vi at boksen tilpasser sig efter dens indhold*/
+}
+
+header {
+  grid-column: 1/6; /*grid column start og slut på en linje i stedet for to*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 4px solid #3A8479;
 }/*# sourceMappingURL=style.css.map */
