@@ -36,4 +36,117 @@ header {
   align-items: center;
   background-color: #ffffff;
   border-bottom: 4px solid #3A8479;
+}
+
+/*Navigation*/
+nav {
+  color: #484848;
+  height: 4em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 70px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+nav a {
+  color: #484848;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: #3A8479;
+}
+
+.mobile-nav .bars {
+  display: none;
+}
+
+.ToggleShow {
+  display: flex;
+  flex-direction: coloumn;
+}
+
+.active {
+  color: #3A8479;
+}
+
+/*Header billeder/banner*/
+.header-img {
+  position: relative;
+  margin-bottom: 1em;
+}
+.header-img .banner-tekst {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+.header-img h1 {
+  font-size: 3.5vw;
+}
+.header-img p {
+  font-size: 2vw;
+}
+.header-img a {
+  position: absolute;
+  background-color: #3A8479;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.header-img .bg-billede-mobil {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-column: 1/6;
+  grid-template-columns: repeat(6, 1fr);
+}
+main h2 {
+  grid-column: 1/7;
+  text-align: center;
+  font-size: 30px;
+}
+main .cta-wrapper {
+  grid-column: 1/7;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*CTA bokse*/
+.cta-1 {
+  background-color: #ffffff;
+  width: 20vw;
+  padding: 2em;
+  margin: 2em auto;
+}
+.cta-1 img {
+  margin: 0 auto;
+  width: 60%;
+  display: block;
+}
+.cta-1 a {
+  background-color: #3A8479;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.cta-1 p {
+  margin-bottom: 2em;
 }/*# sourceMappingURL=style.css.map */
